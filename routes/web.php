@@ -18,4 +18,4 @@ Route::get('/', function () {
 */
 
 Route::get('/', 'libsearchIndexController@index');
-
+Route::get('/city', 'displayLibController@index');

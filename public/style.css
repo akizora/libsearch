@@ -115,7 +115,42 @@
 }
 
 
+/* displayLibController */
+.display_inner {
+	margin: auto;
+  }
+  
+.display_inner p {
+	font-size: 2em;
+	text-align: center;
+}
 
+.display_inner table {
+	width: 100%;
+	border-collapse: collapse;
+}
 
+.display_inner table tr{
+	border-bottom: solid 2px white;
+}
 
+.display_inner table tr:last-child{
+	border-bottom: none;
+}
 
+.display_inner table th{
+	position: relative;
+	text-align: left;
+	width: 30%;
+	background-color: #52c2d0;
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.display_inner table td{
+	text-align: left;
+	text-align: center;
+	background-color: #eee;
+	padding: 10px 0;
+}

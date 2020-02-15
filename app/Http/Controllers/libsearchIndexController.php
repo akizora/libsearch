@@ -12,7 +12,7 @@ class libsearchIndexController extends Controller
         // $prefs = Prefecture::all();
         // return view('index',['prefs' => $prefs]);
 
-        // 東京都の市区町村
+        // 東京都の人気のある市区町村を表示
         $cities = City::where('pref_id', '13')->where('popularflg', '1')->get();
         return view('index',['cities' => $cities]);
     }

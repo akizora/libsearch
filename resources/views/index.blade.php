@@ -26,7 +26,7 @@
 	<!-- mymain -->
 	<div class="maintop_container">
 		<div class="libserch_title">LibSearch</div>
-		<div class="libserch_sub_title">図書館に、出かけてみよう。</div>
+		<!-- <div class="libserch_sub_title">図書館に、出かけてみよう。</div> -->
 	</div>
 
 	<!-- search card -->
@@ -36,7 +36,7 @@
 
 			<!-- phpの処理を書く -->
 			@foreach ($cities as $city)
-				<span>{{ $city->name }}</span>
+				<a href="{{ url('/city') }}">{{ $city->name }}</a>
 			@endforeach
 
 
