@@ -36,7 +36,7 @@
 
 			<!-- phpの処理を書く -->
 			@foreach ($cities as $city)
-				<a href="{{ url('/city') }}">{{ $city->name }}</a>
+				<a href="{{ url('/city/') }}?name={{ $city->name }}">{{ $city->name }}</a>
 			@endforeach
 
 
